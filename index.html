@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>testj</title>
+<style type="text/css">
+	header nav ul {list-style: none;}
+	header nav ul li {
+		float: left;
+		width:200px;
+		height: 35px;
+		margin-right: 10px;
+		background: rgba(0,120,150, 0.3);
+	}
+	header nav ul li a {text-decoration: none;}
+</style>
+<script type="text/javascript" src="resources/js/main.js"></script>
+<script type="text/javascript">
+	function showAlert(){
+		window.alert("script 태그 안의 함수가 실행되었음.");
+	}
+</script>
+</head>
+<body>
+<header>
+	<h1>자바스크립트 연습 프로젝트</h1>
+	<nav>
+		<ul>
+		<li><a href="views/testjs/sample1.html">자바스크립트 작성 위치</a></li>
+		<li><a href="views/testjs/sample2.html">자바스크립트 출력 처리</a></li>
+		<li><a href="views/testjs/sample3.html">자바스크립트 입력 처리</a></li>
+		<li><a href="views/testjs/sample4.html">document 의 태그 객체 정보 얻는 방법</a></li>
+		<li><a href="views/testjs/sample5.html">자바스크립트 배열 처리</a></li>
+		<li><a href="views/testjs/sample6.html">자바스크립트 배열 처리 선생님편</a></li>
+		<li><a href="views/testjs/sample7.html">자바스크립트 함수 처리</a></li>
+		<li><a href="views/testjs/sample8.html">자바스크립트 함수 처리</a></li>
+		<li><a href="views/testjs/sample9.html">자바스크립트 객체 다루기</a></li>
+		</ul>
+	</nav>
+</header>
+<hr style="clear:both;">
+<h2>자바스크립트 작성 위치</h2>
+<ol>
+<li>html이 제공하는 시작태그에 on이벤트 속성을 추가해서,
+바로 inline 방식으로 자바스크립트 소스를 작성하고 실행되게 할 수 있다.</li>
+<button onclick="javascript:window.alert('버튼이 클릭돼따!! 클릭돼따!!!')">클릭해 보세요.</button>
+<li>script 태그 안에 함수를 작성해서  태그와 on이벤트 속성으로 연결 구동되게 할 수 있다.</li>
+<button onclick="showAlert();">함수 구동 확인</button>
+<li>script 태그는 html 문서 안에서 여러 번 사용할 수 있고, 작성 위치도 제한이 없다.</li>
+<button>show() 함수 실행</button>
+<script type="text/javascript">
+
+</script>
+
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
