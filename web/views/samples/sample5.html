@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sample6</title>
+</head>
+<body>
+<h1>자바스크립트에서 배열 다루기</h1>
+<p>
+	<script type="text/javascript">
+	var arr1 = new Array(5); // 배열의 크기가 5인 배열 생성
+	var arr2 = new Array("가나", "로아커", "키커", "에어쉘", "미니쉘"); // 배열 선언과 동시에 요소 값 초기화
+	var arr3 = new Array(); // 배열의 크기가 정해지지 않은 배열을 선언한다.
+	for(var i = 0; i < arr1.length; i++){
+		arr1[i] = (i + 1) * 100; // 배열의 정해진 인덱스 요소에 값을 할당
+		arr3.push((i + 1) * 100); // 배열에 값을 추가한다
+	}
+	for(i = 0; i < arr1.length; i++){
+		document.write("arr1[" + i + "] = " + arr1[i] + ", ");
+		document.write("arr2[" + i + "] = " + arr2[i] + ", ");
+		//document.write("arr3[" + i + "] = " + arr3[i] + "<br>");
+		document.write("arr3.pop() = " + arr3.pop() + "<br>");
+	}
+
+	</script>
+
+</p>
+<hr>
+<h2>자바스크립트에서 배열 초기화</h2>
+<ul>
+	<li>JAVA</li>
+	<li>ORACLE</li>
+	<li>WEB CLIENT</li>
+	<li>WEB SERVER</li>
+	<li>FRAMEWORK</li>
+</ul>
+<p>
+	<script type="text/javascript">
+		var arr1 = new Array("appple", "banana", "peach", "melon", "grape");
+		var arr2 = [100, 200, 300, 400, 500];
+		var lies = document.getElementsByTagName("li");
+		document.write("li 태그에 기록된 값들 <br>");
+		for(var i = 0; i < lies.length; i++){
+			document.write(i + ": " + lies[i].innerHTML + "<br>");
+		}
+
+		for(var i in lies){
+			document.write(i + ": " + lies[i].innerHTML + "<br>");
+		}
+
+	</script>
+</p>
+<hr>
+<h2>내장된 Array 객체가 제공하는 메소드와 속성(필드)</h2>
+<p>
+	<script type="text/javascript">
+		var array = ["java", "oracle", "css3", "html5", "javascript"];
+
+		document.write("array : " + array.totring() + "<br>");
+		document.write("indexOf : " + array.indexOf("css3") + "<br>");
+		document.write("reverse : " + array.reverse() + "<br>");
+		document.write("shift : " + array.shift() + "<br>");
+		document.write("array : " + array.toString() + "<br>");
+		document.write("sort : " + array.sort().toString() + "<br>");
+	</script>
+</p>
+
+
+</body>
+</html>
